@@ -2,7 +2,7 @@
   "name": "material-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Sh4n-Oldone.github.io/material-ui",
+  "homepage": "https://sh4n-oldone.github.io/material-ui",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
