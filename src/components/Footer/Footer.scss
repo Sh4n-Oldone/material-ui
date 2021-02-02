@@ -1,0 +1,19 @@
+@import '../../utils/variables';
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 80px;
+}
+
+.footer__copyright {
+  color: $basic-color;
+  text-shadow: $basic-text-shadow;
+}
+
+.footer__copyright_simple {
+  color: $simple-color;
+}

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACV,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "NavFooter.scss",
+        "../../utils/_variables.scss"
+    ],
+    "names": [],
+    "file": "NavFooter.css"
+}

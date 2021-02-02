@@ -1,19 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../Header/Header';
-import './App.css';
+import React, { useState } from 'react'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import './App.css'
 
 export default function App() {
+  const [isBackgroundSimple, setIsBackgroundSimple] = useState(false)
+  const [isRussian, setIsRussian] = useState(true)
 
 
-
-
+  function switchBackground() { setIsBackgroundSimple(!isBackgroundSimple) }
+  function switchLanguage() { setIsRussian(!isRussian) }
 
   return (
-    <div className='App'>
+    <div className={`app${isBackgroundSimple ? ' app_simple' : ''}`}>
       <div className='page'>
 
-        <Header />
+        <Header 
+          switchBackground={switchBackground}
+          switchLanguage={switchLanguage}
+          isSimple={isBackgroundSimple}
+          isRussian={isRussian}
+        />
+
         
+
+        <Footer 
+          isSimple={isBackgroundSimple}
+          isRussian={isRussian}
+        />
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MenuListComposition() {
+export default function MenuListComposition({isSimple, isRussian}) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -51,18 +51,18 @@ export default function MenuListComposition() {
 
     prevOpen.current = open;
   }, [open]);
-
+  
   return (
     <div className={classes.root}>
       <div>
         <Button
           ref={anchorRef}
-          className='nav__button'
+          className={`nav__button${isSimple ? ' nav__button_simple' : ''}`}
           aria-controls={open ? 'menu-list-grow' : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          Другие проекты
+          {isRussian ? 'Другие проекты' : 'Other projects'}
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (
@@ -90,7 +90,7 @@ export default function MenuListComposition() {
                         rel="noreferrer"
                         className='MenuItem'
                       >
-                        Путешествие по России
+                        {isRussian ? 'Путешествие по России' : 'Russia on rails'}
                       </a>
                     </MenuItem>
                   </MenuList>

@@ -4,9 +4,13 @@
 }
 
 .nav__button span {
-  color: #fff;
+  color: #fbb440;
   font-size: 18px;
   text-shadow: 0 5px 8px black;
+}
+
+.nav__button_simple span {
+  color: #fff;
 }
 
 .MenuList {

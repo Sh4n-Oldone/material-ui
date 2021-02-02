@@ -1,12 +1,18 @@
+@import '../../utils/variables';
+
 .nav__button {
   margin: 0;
   padding: 0;
 }
 
 .nav__button span {
-  color: #fff;
+  color: $basic-color;
   font-size: 18px;
-  text-shadow: 0 5px 8px rgb(0, 0, 0);
+  text-shadow: $basic-text-shadow;
+}
+
+.nav__button_simple span {
+  color: $simple-color;
 }
 
 .MenuList {

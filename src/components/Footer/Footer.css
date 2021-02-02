@@ -1,0 +1,27 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 0 80px;
+}
+
+.footer__copyright {
+  color: #fbb440;
+  text-shadow: 0 5px 8px black;
+}
+
+.footer__copyright_simple {
+  color: #fff;
+}
+/*# sourceMappingURL=Footer.css.map */
