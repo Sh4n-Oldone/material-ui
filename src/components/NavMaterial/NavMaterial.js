@@ -53,7 +53,7 @@ export default function MenuListComposition({isSimple, isRussian}) {
   }, [open]);
   
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} NavMaterial__wrapper`}>
       <div>
         <Button
           ref={anchorRef}
