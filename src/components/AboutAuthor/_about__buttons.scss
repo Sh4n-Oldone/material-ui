@@ -1,0 +1,76 @@
+.about__button {
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  height: 50px;
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $buttons-margin;
+  font-weight: 700;
+  color: $basic-color;
+  -webkit-text-stroke: 1px rgba(24, 24, 24, 0.9);
+  font-size: 24px;
+  line-height: 24px;
+  background: linear-gradient(
+    to right top,
+    rgba(107, 107, 107, 0.4),
+    rgba(107, 107, 107, 0.05)
+  );
+  box-shadow: $basic-text-shadow;
+}
+
+.about__button_simple {
+  color: $simple-color;
+  background: linear-gradient(
+    to right top,
+    rgba(26, 26, 26, 0.4),
+    rgba(26, 26, 26, 0.05)
+  );
+}
+
+.about__button:hover {
+  margin-top: -$button-margin-hover;
+  margin-bottom: $buttons-margin + $button-margin-hover;
+  transform: scale(1.05);
+  box-shadow: 0 5px 8px $basic-color;
+  
+}
+
+.about__button_simple:hover {
+  box-shadow: $basic-text-shadow;
+}
+
+.about__button:active {
+  box-shadow: 0 3px 3px rgb(0, 0, 0) inset;
+}
+
+.about__button_simple:active {
+  box-shadow: 0 3px 3px rgb(0, 0, 0) inset;
+}
+
+.about__button:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__button:last-of-type:hover {
+  margin-top: -$button-margin-hover;
+  margin-bottom: $button-margin-hover;
+}
+
+.about__button_default {
+
+}
+
+.about__button_author {
+
+}
+
+.about__button_skills {
+
+}
+
+.about__button_job {
+
+}

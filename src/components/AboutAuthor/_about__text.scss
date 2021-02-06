@@ -1,0 +1,80 @@
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.about__text {
+  box-shadow: -5px 20px 35px 1px rgba(0,0,0,0.5);
+  padding: 12px;
+  border-radius: 0.7rem;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+  -webkit-text-stroke: 1px rgba(24, 24, 24, 0.9);
+  text-align: justify;
+}
+
+.about__text_simple {
+  -webkit-text-stroke: 0;
+}
+
+.about__default {
+  
+}
+
+.about__author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.about__skills {
+  
+}
+
+.about__job {
+  
+}
+
+.about__default_hidden {
+  display: none;
+}
+
+.about__author_hidden {
+  display: none;
+}
+
+.about__skills_hidden {
+  display: none;
+}
+
+.about__job_hidden {
+  display: none;
+}
+
+.about__author_image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-image: url('../../images/me-with-a-bg.png');
+  background-size: contain;
+
+  .about__author_image-background-image {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 40px;
+    animation: rotation infinite 20s linear;
+  }
+  .about__author_image-photo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+}
+

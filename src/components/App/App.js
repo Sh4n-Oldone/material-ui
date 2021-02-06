@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import AboutAuthor from '../AboutAuthor/AboutAuthor'
 import './App.css'
 
 export default function App() {
@@ -22,7 +23,10 @@ export default function App() {
           isRussian={isRussian}
         />
 
-        
+        <AboutAuthor 
+          isSimple={isBackgroundSimple}
+          isRussian={isRussian}
+        />
 
         <Footer 
           isSimple={isBackgroundSimple}
@@ -30,5 +34,5 @@ export default function App() {
         />
       </div>
     </div>
-  );
+  )
 }

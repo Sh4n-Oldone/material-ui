@@ -1,0 +1,82 @@
+@import '../../utils/variables';
+$buttons-margin: 25px;
+$button-margin-hover: 3px;
+
+.about {
+  width: 100%;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: minmax(275px, 30%) auto;
+  width: auto;
+  margin: 0 80px 40px;
+  background: #fff;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 1.5rem;
+  box-shadow: -20px 25px 30px 6px rgba(0,0,0,0.5);
+  backdrop-filter: blur(0.1rem);
+}
+
+.about__left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  background: linear-gradient(
+    to right top,
+    rgba(37, 230, 255, 0.5),
+    rgba(164, 241, 255, 0.2)
+  );
+  border-radius: 1.5rem;
+  backdrop-filter: blur(0.1rem);
+  padding: $buttons-margin;
+}
+
+.about__left-block_simple {
+  background: linear-gradient(
+    to right top,
+    rgba(70, 70, 70, .1),
+    rgba(70, 70, 70, .005)
+  );
+  background: rgb(173, 173, 173);
+}
+
+.about__right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $basic-color;
+  padding: $buttons-margin;
+}
+
+.about__right-block_simple {
+  color: $simple-color;
+}
+
+@import './about__buttons';
+@import './about__text';
+
+@media screen and (max-width: 800px) {
+  .about__wrapper {
+    grid-template-columns: none;
+    grid-template-rows: 350px auto;
+  }
+
+
+}
+
+@media screen and (max-width: 630px) {
+  .about__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+}
