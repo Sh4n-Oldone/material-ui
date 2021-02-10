@@ -1,12 +1,19 @@
 @import '../../utils/variables';
 
 .nav-footer {
+  margin:0;
+  padding: 0;
+  text-indent: 0;
   max-width: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .nav-footer_simple {
