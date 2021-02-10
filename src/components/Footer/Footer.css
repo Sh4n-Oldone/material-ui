@@ -24,4 +24,20 @@
 .footer__copyright_simple {
   color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

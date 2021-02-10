@@ -17,3 +17,15 @@
 .footer__copyright_simple {
   color: $simple-color;
 }
+
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+}

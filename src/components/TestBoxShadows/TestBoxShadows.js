@@ -151,7 +151,7 @@ export default function TestBoxShadows({isSimple}) {
         </div>
 
         <div className='input-slider__wrapper'>
-          <p className='input-slider__name'>box-shadow: {shadowString}</p>
+          <p className='input-slider__name input-slider__name_result'>box-shadow: {shadowString}</p>
         </div>
         
       </div>
