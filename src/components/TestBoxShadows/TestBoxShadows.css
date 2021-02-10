@@ -180,7 +180,7 @@
     padding-right: 2px;
   }
   .shadows-box__sliders {
-    padding: 3px;
+    padding: 10px 3px 30px;
     gap: 1px;
   }
   .input-slider {
