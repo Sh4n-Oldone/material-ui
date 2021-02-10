@@ -43,12 +43,7 @@ $button-margin-hover: 3px;
 }
 
 .about__left-block_simple {
-  background: linear-gradient(
-    to right top,
-    rgba(70, 70, 70, .1),
-    rgba(70, 70, 70, .005)
-  );
-  background: rgb(173, 173, 173);
+  background: rgba(70, 70, 70, .6);
 }
 
 .about__right-block {

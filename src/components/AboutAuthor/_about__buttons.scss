@@ -1,3 +1,20 @@
+@keyframes increase {
+  75% {
+    transform: scale(1.17);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 5px 8px $basic-color;
+  }
+}
+
+@keyframes simpleincrease {
+  100% {
+    transform: scale(1.05);
+    box-shadow: $basic-text-shadow;;
+  }
+}
+
 .about__button {
   border: 1px solid #fff;
   border-radius: 2rem;
@@ -28,18 +45,18 @@
     rgba(26, 26, 26, 0.4),
     rgba(26, 26, 26, 0.05)
   );
+  -webkit-text-stroke: unset;
+  font-weight: 500;
 }
 
 .about__button:hover {
   margin-top: -$button-margin-hover;
   margin-bottom: $buttons-margin + $button-margin-hover;
-  transform: scale(1.05);
-  box-shadow: 0 5px 8px $basic-color;
-  
+  animation: increase 0.15s 1 linear forwards;
 }
 
 .about__button_simple:hover {
-  box-shadow: $basic-text-shadow;
+  animation: simpleincrease 0.15s 1 ease-out forwards;
 }
 
 .about__button:active {

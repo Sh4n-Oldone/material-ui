@@ -48,9 +48,7 @@
 }
 
 .about__left-block_simple {
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(70, 70, 70, 0.1)), to(rgba(70, 70, 70, 0.005)));
-  background: linear-gradient(to right top, rgba(70, 70, 70, 0.1), rgba(70, 70, 70, 0.005));
-  background: #adadad;
+  background: rgba(70, 70, 70, 0.6);
 }
 
 .about__right-block {
@@ -73,6 +71,50 @@
 
 .about__right-block_simple {
   color: #fff;
+}
+
+@-webkit-keyframes increase {
+  75% {
+    -webkit-transform: scale(1.17);
+            transform: scale(1.17);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 5px 8px #fbb440;
+            box-shadow: 0 5px 8px #fbb440;
+  }
+}
+
+@keyframes increase {
+  75% {
+    -webkit-transform: scale(1.17);
+            transform: scale(1.17);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 5px 8px #fbb440;
+            box-shadow: 0 5px 8px #fbb440;
+  }
+}
+
+@-webkit-keyframes simpleincrease {
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 5px 8px black;
+            box-shadow: 0 5px 8px black;
+  }
+}
+
+@keyframes simpleincrease {
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 5px 8px black;
+            box-shadow: 0 5px 8px black;
+  }
 }
 
 .about__button {
@@ -106,20 +148,20 @@
   color: #fff;
   background: -webkit-gradient(linear, left bottom, right top, from(rgba(26, 26, 26, 0.4)), to(rgba(26, 26, 26, 0.05)));
   background: linear-gradient(to right top, rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.05));
+  -webkit-text-stroke: unset;
+  font-weight: 500;
 }
 
 .about__button:hover {
   margin-top: -3px;
   margin-bottom: 28px;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0 5px 8px #fbb440;
-          box-shadow: 0 5px 8px #fbb440;
+  -webkit-animation: increase 0.15s 1 linear forwards;
+          animation: increase 0.15s 1 linear forwards;
 }
 
 .about__button_simple:hover {
-  -webkit-box-shadow: 0 5px 8px black;
-          box-shadow: 0 5px 8px black;
+  -webkit-animation: simpleincrease 0.15s 1 ease-out forwards;
+          animation: simpleincrease 0.15s 1 ease-out forwards;
 }
 
 .about__button:active {
