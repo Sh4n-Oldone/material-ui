@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './TestBoxShadows.css'
 import { makeStyles } from '@material-ui/core/styles'
 import Switch from '@material-ui/core/Switch'
@@ -20,9 +20,9 @@ export default function TestBoxShadows({isSimple}) {
                         ${verticalLength}px 
                         ${blurRadius}px 
                         ${spreadRadius}px rgba(
-                          ${isSimple ? 255 : shadowColor.r}, 
-                          ${isSimple ? 255 : shadowColor.g}, 
-                          ${isSimple ? 255 : shadowColor.b}, 
+                          ${shadowColor.r}, 
+                          ${shadowColor.g}, 
+                          ${shadowColor.b}, 
                         ${opacity})`
   const useStyles = makeStyles((theme) => ({
     shadows: {
@@ -47,6 +47,12 @@ export default function TestBoxShadows({isSimple}) {
   }
   const handleOpacity = (event) => { setOpacity( event.target.value === '' ? '' : Number(event.target.value) ) }
   const handleInset = () => { setIsInset(!isInset) }
+
+  useEffect(() => {
+    isSimple===true 
+      ? setShadowColor({ r: 255, g: 255, b: 255 }) 
+      : setShadowColor({ r: 0, g: 0, b: 0 })
+  }, [isSimple])
 
   return (
     <section className={`shadows-box
