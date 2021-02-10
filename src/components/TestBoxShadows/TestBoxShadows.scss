@@ -158,7 +158,7 @@ $radius: 2rem;
   }
 
   .input-slider {
-    width: 100px;    
+    width: auto;    
   }
 
   .input-slider__name {
@@ -177,4 +177,44 @@ $radius: 2rem;
     text-align: center;
   }
 
+  .input-slider_shadow-color {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .input-slider__name {
+    font-size: 13px;
+  }
+
+  .input-slider__label {
+    width: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .shadows-box {
+    min-width: 200px;
+  }
+
+  .input-slider {
+    width: 100px;
+    margin-left: 3px; 
+  }
+
+  .input-slider__name {
+    font-size: 13px;
+  }
+
+  .input-slider__label {
+    width: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }

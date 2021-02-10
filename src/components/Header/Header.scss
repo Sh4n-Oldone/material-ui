@@ -56,3 +56,19 @@
   }
 
 }
+
+@media screen and (max-width: 351px) {
+  .header__title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .header__title {
+    font-size: 28px;
+  }
+
+  .switches__wrapper {
+    gap: 3px;
+  }
+}
