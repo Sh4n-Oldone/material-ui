@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import TestBoxShadows from '../TestBoxShadows/TestBoxShadows'
 import AboutAuthor from '../AboutAuthor/AboutAuthor'
 import './App.css'
+
 
 export default function App() {
   const [isBackgroundSimple, setIsBackgroundSimple] = useState(false)
@@ -21,6 +23,10 @@ export default function App() {
           switchLanguage={switchLanguage}
           isSimple={isBackgroundSimple}
           isRussian={isRussian}
+        />
+
+        <TestBoxShadows 
+          isSimple={isBackgroundSimple}
         />
 
         <AboutAuthor 

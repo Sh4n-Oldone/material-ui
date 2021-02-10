@@ -38,7 +38,7 @@ export default function AboutAuthor({isSimple, isRussian}) {
   return (
     <section className='about'>
 
-      <div className='about__wrapper'>
+      <div className={`about__wrapper${isSimple ? ' about__wrapper_simple' : ''}`}>
         <div className={`about__left-block${isSimple ? ' about__left-block_simple' : ''}`}>
           <button 
             className={`button-style__reset about__button about__button_default${
