@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/material-ui/static/css/main.c26b6e65.chunk.css",
-    "main.js": "/material-ui/static/js/main.99bbb775.chunk.js",
-    "main.js.map": "/material-ui/static/js/main.99bbb775.chunk.js.map",
+    "main.css": "/material-ui/static/css/main.f83c8cf3.chunk.css",
+    "main.js": "/material-ui/static/js/main.e73b3ae0.chunk.js",
+    "main.js.map": "/material-ui/static/js/main.e73b3ae0.chunk.js.map",
     "runtime-main.js": "/material-ui/static/js/runtime-main.c1eba325.js",
     "runtime-main.js.map": "/material-ui/static/js/runtime-main.c1eba325.js.map",
-    "static/js/2.b5120b39.chunk.js": "/material-ui/static/js/2.b5120b39.chunk.js",
-    "static/js/2.b5120b39.chunk.js.map": "/material-ui/static/js/2.b5120b39.chunk.js.map",
+    "static/js/2.6d6977ed.chunk.js": "/material-ui/static/js/2.6d6977ed.chunk.js",
+    "static/js/2.6d6977ed.chunk.js.map": "/material-ui/static/js/2.6d6977ed.chunk.js.map",
     "index.html": "/material-ui/index.html",
-    "static/css/main.c26b6e65.chunk.css.map": "/material-ui/static/css/main.c26b6e65.chunk.css.map",
-    "static/js/2.b5120b39.chunk.js.LICENSE.txt": "/material-ui/static/js/2.b5120b39.chunk.js.LICENSE.txt",
+    "static/css/main.f83c8cf3.chunk.css.map": "/material-ui/static/css/main.f83c8cf3.chunk.css.map",
+    "static/js/2.6d6977ed.chunk.js.LICENSE.txt": "/material-ui/static/js/2.6d6977ed.chunk.js.LICENSE.txt",
     "static/media/AboutAuthor.css": "/material-ui/static/media/me-with-a-bg.58a873ad.png",
     "static/media/me.46e6173b.png": "/material-ui/static/media/me.46e6173b.png",
     "static/media/sun.40900a29.svg": "/material-ui/static/media/sun.40900a29.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c1eba325.js",
-    "static/js/2.b5120b39.chunk.js",
-    "static/css/main.c26b6e65.chunk.css",
-    "static/js/main.99bbb775.chunk.js"
+    "static/js/2.6d6977ed.chunk.js",
+    "static/css/main.f83c8cf3.chunk.css",
+    "static/js/main.e73b3ae0.chunk.js"
   ]
 }
