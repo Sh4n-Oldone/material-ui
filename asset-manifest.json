@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/material-ui/static/css/main.39e66c87.chunk.css",
+    "main.css": "/material-ui/static/css/main.cbfd31e6.chunk.css",
     "main.js": "/material-ui/static/js/main.e73b3ae0.chunk.js",
     "main.js.map": "/material-ui/static/js/main.e73b3ae0.chunk.js.map",
     "runtime-main.js": "/material-ui/static/js/runtime-main.c1eba325.js",
@@ -8,7 +8,7 @@
     "static/js/2.6d6977ed.chunk.js": "/material-ui/static/js/2.6d6977ed.chunk.js",
     "static/js/2.6d6977ed.chunk.js.map": "/material-ui/static/js/2.6d6977ed.chunk.js.map",
     "index.html": "/material-ui/index.html",
-    "static/css/main.39e66c87.chunk.css.map": "/material-ui/static/css/main.39e66c87.chunk.css.map",
+    "static/css/main.cbfd31e6.chunk.css.map": "/material-ui/static/css/main.cbfd31e6.chunk.css.map",
     "static/js/2.6d6977ed.chunk.js.LICENSE.txt": "/material-ui/static/js/2.6d6977ed.chunk.js.LICENSE.txt",
     "static/media/AboutAuthor.css": "/material-ui/static/media/me-with-a-bg.58a873ad.png",
     "static/media/me.46e6173b.png": "/material-ui/static/media/me.46e6173b.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.c1eba325.js",
     "static/js/2.6d6977ed.chunk.js",
-    "static/css/main.39e66c87.chunk.css",
+    "static/css/main.cbfd31e6.chunk.css",
     "static/js/main.e73b3ae0.chunk.js"
   ]
 }
