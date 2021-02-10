@@ -9,29 +9,26 @@ export default function AboutAuthor({isSimple, isRussian}) {
   const [isAuthorOpen, setIsAuthorOpen] = useState(false)
   const [isSkillsOpen, setIsSkillsOpen] = useState(false)
   const [isJobOpen, setIsJobOpen] = useState(false)
-
-  function changeToDefault() {
+  const disableStates = () => {
+    setIsDefaultOpen(false)
+    setIsAuthorOpen(false)
+    setIsSkillsOpen(false)
+    setIsJobOpen(false)
+  }
+  const changeToDefault = () => {
+    disableStates()
     setIsDefaultOpen(true)
-    setIsAuthorOpen(false)
-    setIsSkillsOpen(false)
-    setIsJobOpen(false)
   }
-  function changeToAuthor() {
-    setIsDefaultOpen(false)
+  const changeToAuthor = () => {
+    disableStates()
     setIsAuthorOpen(true)
-    setIsSkillsOpen(false)
-    setIsJobOpen(false)
   }
-  function changeToSkills() {
-    setIsDefaultOpen(false)
-    setIsAuthorOpen(false)
+  const changeToSkills = () => {
+    disableStates()
     setIsSkillsOpen(true)
-    setIsJobOpen(false)
   }
-  function changeToJob() {
-    setIsDefaultOpen(false)
-    setIsAuthorOpen(false)
-    setIsSkillsOpen(false)
+  const changeToJob = () => {
+    disableStates()
     setIsJobOpen(true)
   }
 
@@ -39,7 +36,9 @@ export default function AboutAuthor({isSimple, isRussian}) {
     <section className='about'>
 
       <div className={`about__wrapper${isSimple ? ' about__wrapper_simple' : ''}`}>
+
         <div className={`about__left-block${isSimple ? ' about__left-block_simple' : ''}`}>
+
           <button 
             className={`button-style__reset about__button about__button_default${
               isSimple ? ' about__button_simple' : ''
@@ -76,7 +75,9 @@ export default function AboutAuthor({isSimple, isRussian}) {
           >
             {isRussian ? 'О поиске работы' : 'Personal interests'}
           </button>
+
         </div>
+
         <div 
           className={`about__right-block${
             isSimple ? ' about__right-block_simple' : ''
