@@ -14,6 +14,7 @@ export default function TestBoxShadows({isSimple}) {
   const [shadowColor, setShadowColor] = useState({ r: 0, g: 0, b: 0 })
   const [opacity, setOpacity] = useState(0.8)
   const [isInset, setIsInset] = useState(false)
+  const [currentInputColor, setCurrentInputColor] = useState('#000000')
 
   const shadowString = `${isInset ? 'inset' : ''} 
                         ${horizontalLength}px 
@@ -37,21 +38,28 @@ export default function TestBoxShadows({isSimple}) {
   const handleSpreadRadius = (event) => { setSpreadRadius( event.target.value === '' ? '' : Number(event.target.value) ) }
   const handleShadowColor = (event) => {
     const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(event.target.value)
-    result 
-      ? setShadowColor({
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16)
-        }) 
-      : setShadowColor({ r: 0, g: 0, b: 0 })
+    if (result) {
+      setShadowColor({
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+      })
+      setCurrentInputColor(event.target.value)
+    } else {
+      setShadowColor({ r: 0, g: 0, b: 0 })
+    }
   }
   const handleOpacity = (event) => { setOpacity( event.target.value === '' ? '' : Number(event.target.value) ) }
   const handleInset = () => { setIsInset(!isInset) }
 
   useEffect(() => {
-    isSimple===true 
-      ? setShadowColor({ r: 255, g: 255, b: 255 }) 
-      : setShadowColor({ r: 0, g: 0, b: 0 })
+    if (isSimple===true) {
+      setShadowColor({ r: 255, g: 255, b: 255 })
+      setCurrentInputColor('#ffffff')
+    } else {
+      setShadowColor({ r: 0, g: 0, b: 0 })
+      setCurrentInputColor('#000000')
+    }
   }, [isSimple])
 
   return (
@@ -139,6 +147,7 @@ export default function TestBoxShadows({isSimple}) {
             name='ShadowColor'
             onChange={handleShadowColor}
             className='input-slider input-slider_shadow-color'
+            value={currentInputColor}
           />
         </div>
 
