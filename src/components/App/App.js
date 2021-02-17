@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer'
 import TestBoxShadows from '../TestBoxShadows/TestBoxShadows'
 import AboutAuthor from '../AboutAuthor/AboutAuthor'
 import TestBoxGenerators from '../TestBoxGenerators/TestBoxGenerators'
-import { getQR } from '../../utils/apiQR'
 import './App.css'
 
 export default function App() {
