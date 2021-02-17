@@ -1,0 +1,61 @@
+.generators-box {
+  max-width: 1160px;
+  width: auto;
+  margin: 40px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 2rem;
+}
+
+.generators-box__simple {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.generators-box__hidden {
+  display: none;
+}
+
+.generators-box__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.generators-box__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.generators-box__qrcode {
+  margin-top: 20px;
+}
+
+.generators-box__qrcode_hidden {
+  display: none;
+}
+/*# sourceMappingURL=TestBoxGenerators.css.map */

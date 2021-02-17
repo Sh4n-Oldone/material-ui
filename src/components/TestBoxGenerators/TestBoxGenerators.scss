@@ -1,0 +1,45 @@
+@import '../../utils/variables';
+$radius: 2rem;
+
+.generators-box {
+  max-width: 1160px;
+  width: auto;
+  margin: 40px;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba($color: #ffffff, $alpha: .6);
+  border-radius: $radius;
+}
+
+.generators-box__simple {
+  background-color: rgba($color: #ffffff, $alpha: .1);
+}
+
+.generators-box__hidden {
+  display: none;
+}
+
+.generators-box__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.generators-box__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.generators-box__qrcode {
+  margin-top: 20px;
+}
+
+.generators-box__qrcode_hidden {
+  display: none;
+}

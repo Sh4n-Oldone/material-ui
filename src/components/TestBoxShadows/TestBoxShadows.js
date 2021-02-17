@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import './TestBoxShadows.css'
 import { makeStyles } from '@material-ui/core/styles'
 import Switch from '@material-ui/core/Switch'
 import './TestBoxShadows.css'

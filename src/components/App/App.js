@@ -3,16 +3,18 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import TestBoxShadows from '../TestBoxShadows/TestBoxShadows'
 import AboutAuthor from '../AboutAuthor/AboutAuthor'
+import TestBoxGenerators from '../TestBoxGenerators/TestBoxGenerators'
+import { getQR } from '../../utils/apiQR'
 import './App.css'
-
 
 export default function App() {
   const [isBackgroundSimple, setIsBackgroundSimple] = useState(false)
   const [isRussian, setIsRussian] = useState(true)
 
-
   function switchBackground() { setIsBackgroundSimple(!isBackgroundSimple) }
   function switchLanguage() { setIsRussian(!isRussian) }
+
+  
 
   return (
     <div className={`app${isBackgroundSimple ? ' app_simple' : ''}`}>
@@ -26,6 +28,10 @@ export default function App() {
         />
 
         <TestBoxShadows 
+          isSimple={isBackgroundSimple}
+        />
+
+        <TestBoxGenerators 
           isSimple={isBackgroundSimple}
         />
 
