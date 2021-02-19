@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/material-ui/static/css/main.feac7a9a.chunk.css",
-    "main.js": "/material-ui/static/js/main.f40c44fc.chunk.js",
-    "main.js.map": "/material-ui/static/js/main.f40c44fc.chunk.js.map",
+    "main.css": "/material-ui/static/css/main.f2b3677c.chunk.css",
+    "main.js": "/material-ui/static/js/main.869df1f4.chunk.js",
+    "main.js.map": "/material-ui/static/js/main.869df1f4.chunk.js.map",
     "runtime-main.js": "/material-ui/static/js/runtime-main.c1eba325.js",
     "runtime-main.js.map": "/material-ui/static/js/runtime-main.c1eba325.js.map",
     "static/js/2.52fc2753.chunk.js": "/material-ui/static/js/2.52fc2753.chunk.js",
     "static/js/2.52fc2753.chunk.js.map": "/material-ui/static/js/2.52fc2753.chunk.js.map",
     "index.html": "/material-ui/index.html",
-    "static/css/main.feac7a9a.chunk.css.map": "/material-ui/static/css/main.feac7a9a.chunk.css.map",
+    "static/css/main.f2b3677c.chunk.css.map": "/material-ui/static/css/main.f2b3677c.chunk.css.map",
     "static/js/2.52fc2753.chunk.js.LICENSE.txt": "/material-ui/static/js/2.52fc2753.chunk.js.LICENSE.txt",
     "static/media/AboutAuthor.css": "/material-ui/static/media/me-with-a-bg.58a873ad.png",
     "static/media/me.46e6173b.png": "/material-ui/static/media/me.46e6173b.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.c1eba325.js",
     "static/js/2.52fc2753.chunk.js",
-    "static/css/main.feac7a9a.chunk.css",
-    "static/js/main.f40c44fc.chunk.js"
+    "static/css/main.f2b3677c.chunk.css",
+    "static/js/main.869df1f4.chunk.js"
   ]
 }
