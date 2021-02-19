@@ -57,7 +57,7 @@ export default function AboutAuthor({isSimple, isRussian}) {
           >
             {isRussian ? 'Об авторе' : 'About me'}
           </button>
-          <button 
+          {/* <button 
             className={`button-style__reset about__button about__button_skills${
               isSimple ? ' about__button_simple' : ''
             }`} 
@@ -65,7 +65,7 @@ export default function AboutAuthor({isSimple, isRussian}) {
             onClick={changeToSkills}
           >
             {isRussian ? 'О навыках' : 'My skills'}
-          </button>
+          </button> */}
           <button 
             className={`button-style__reset about__button about__button_job${
               isSimple ? ' about__button_simple' : ''
@@ -85,10 +85,15 @@ export default function AboutAuthor({isSimple, isRussian}) {
         >
           <div className={`about__default${isDefaultOpen ? '' : ' about__default_hidden'}`}>
             <p className={`about__text${isSimple ? ' about__text_simple' : ''}`}>
-              Несмотря на то, что основу страницы я собирал с помощью CRA, по всей странице я использовал компоненты из material-ui для того, чтобы познакомится с возможностями библиотеки.
+              {isRussian 
+                ? 'Несмотря на то, что основу страницы я собирал с помощью CRA, по всей странице я использовал компоненты из material-ui для того, чтобы познакомится с возможностями библиотеки.'
+                : 'This page was build with CRA but also i used material-ui lib for practice. Buttons, icons and inputs made from material and customize by me.'
+              }
             </p>
             <p className={`about__text${isSimple ? ' about__text_simple' : ''}`}>
-              Так же я выбрал для дополнительной практики sass (на самом деле scss, из-за личных предпочтений синтаксиса) и старался использовать как можно больше её функционала - вынес основные переменные в отдельный файл и использовал вложенность.
+              {isRussian
+                ? 'Так же я выбрал для дополнительной практики sass (на самом деле scss, из-за личных предпочтений синтаксиса) и старался использовать как можно больше её функционала - вынес основные переменные в отдельный файл и использовал вложенность.' 
+                : 'For more tests and practice i chose SASS lib (SCSS in particular). Tried to maximize it&#39;s usage: variables with custom file, nesting and reusability'}
             </p>
           </div>
 
@@ -110,12 +115,22 @@ export default function AboutAuthor({isSimple, isRussian}) {
             </p>
           </div>
 
-          <div className={`about__skills${isSkillsOpen ? '' : ' about__skills_hidden'}`}>
-            
-          </div>
+          {/* <div className={`about__skills${isSkillsOpen ? '' : ' about__skills_hidden'}`}>
+            <p className={`about__text${isSimple ? ' about__text_simple' : ''}`}>
+              {isRussian
+                ? ''
+                : ''
+              }
+            </p>
+          </div> */}
 
           <div className={`about__job${isJobOpen ? '' : ' about__job_hidden'}`}>
-            
+            <p className={`about__text${isSimple ? ' about__text_simple' : ''}`}>
+              {isRussian
+                ? 'Я заинтересован в работе не столько на необычных проектах, сколько в креативной и сплочёной команде. Я убеждён, что такие команды в состоянии помимо рутинной работы сами создавать интересную активность и необычные проекты. Хотелось бы поработать в компании, в которой можно без сомнений поговорить как с коллегами, так и с руководством о новых идеях и предложениях.'
+                : 'I prefer work with creative people and unity team but extraordinary projects. I pure think that teams like that can do excelent and interesting job inside everyday rutine. i want to be part of the company that can hear new ideas and offers.'
+              }
+            </p>
           </div>
         </div>
       </div>
